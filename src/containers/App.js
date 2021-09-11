@@ -15,7 +15,7 @@ import './APP.css';
         }
     }
 
-    componentDidMount(){
+    componentDidMount(){ //make an AJAX request using fetch API
         fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then(users => this.setState({robots : users}));
